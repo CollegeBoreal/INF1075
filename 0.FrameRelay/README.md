@@ -14,3 +14,7 @@
 - Configurer la connectivitée inter-VLAN sur les routeurs
 - Utiliser EIGRP comme protocole de routage sur AS100
 - Utiliser Frame Relay comme protocole WAN 
+
+# Topologie
+
+![alt tag](https://github.com/setrar/INF1075/blob/master/0.FrameRelay/FrameRelay.png)
