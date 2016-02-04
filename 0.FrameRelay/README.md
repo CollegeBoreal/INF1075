@@ -12,12 +12,8 @@
 - Désactiver STP sur les ports 1-15 sur les commutateurs clients
 - Protéger lest ports 1-15 contre les boucles
 - Configurer la connectivitée inter-VLAN sur les routeurs
-- Utiliser EIGRP comme protocole de routage sur AS100
+- Utiliser RIPv2 comme protocole de routage sur le reseau 10.0.0.0
 - Utiliser Frame Relay comme protocole WAN 
-
-## Cablage
-
-https://www.freeccnaworkbook.com/blog/ccna/how-to-make-a-t1-crossover
 
 ## Topologie
 
