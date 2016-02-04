@@ -14,3 +14,11 @@
 - Configurer la connectivitée inter-VLAN sur les routeurs
 - Utiliser EIGRP comme protocole de routage sur AS100
 - Utiliser Frame Relay comme protocole WAN 
+
+## Cablage
+
+https://www.freeccnaworkbook.com/blog/ccna/how-to-make-a-t1-crossover
+
+## Topologie
+
+![alt tag](https://github.com/setrar/INF1075/blob/master/0.FrameRelay/FrameRelay.png)
