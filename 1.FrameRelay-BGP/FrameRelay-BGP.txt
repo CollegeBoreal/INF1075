@@ -1,0 +1,92 @@
+
+============= R1 ================
+en
+config t
+hostname R1
+exit
+
+config t
+int serial 0/3/0 
+encapsulation frame-relay
+no shut
+
+int serial 0/3/0.102 point-to-point
+frame-relay interface-dlci 102
+ip address 10.10.10.1 255.255.255.0
+
+int serial 0/3/0.104 point-to-point
+frame-relay interface-dlci 104
+ip address 10.10.13.1 255.255.255.0
+
+exit
+exit
+wr
+
+============= R2 ================
+en
+config t
+hostname R2
+exit
+
+config t
+int serial 0/3/0 
+encapsulation frame-relay
+no shut
+
+int serial 0/3/0.201 point-to-point
+frame-relay interface-dlci 201
+ip address 10.10.10.2 255.255.255.0
+
+int serial 0/3/0.203 point-to-point
+frame-relay interface-dlci 203
+ip address 10.10.11.1 255.255.255.0
+
+exit
+exit
+wr
+
+============= R3 ================
+en
+config t
+hostname R3
+exit
+
+config t
+int serial 0/3/0 
+encapsulation frame-relay
+no shut
+
+int serial 0/3/0.302 point-to-point
+frame-relay interface-dlci 302
+ip address 10.10.11.2 255.255.255.0
+
+int serial 0/3/0.304 point-to-point
+frame-relay interface-dlci 304
+ip address 10.10.12.1 255.255.255.0
+
+exit
+exit
+wr
+
+============= R4 ================
+en
+config t
+hostname R4
+exit
+
+config t
+int serial 0/3/0 
+encapsulation frame-relay
+no shut
+
+int serial 0/3/0.403 point-to-point
+frame-relay interface-dlci 403
+ip address 10.10.12.2 255.255.255.0
+
+int serial 0/3/0.401 point-to-point
+frame-relay interface-dlci 401
+ip address 10.10.13.2 255.255.255.0
+
+exit
+exit
+wr
