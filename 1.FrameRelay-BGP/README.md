@@ -2,6 +2,10 @@
 
 ![alt tag](https://github.com/setrar/INF1075/blob/master/1.FrameRelay-BGP/images/FrameRelay-BGP.png)
 
+## Simulation de Cablage
+
+https://www.freeccnaworkbook.com/blog/ccna/how-to-make-a-t1-crossover
+
 ## Configurer les interfaces séries pour le cloud
 
 ![alt tag](https://github.com/setrar/INF1075/blob/master/1.FrameRelay-BGP/images/Cloud-Serial0-1.png)
