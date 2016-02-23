@@ -1,17 +1,71 @@
 
 
-== Routeur ==
+!== Routeur ==
 
 en
 config t
-int GigabitEthernet 0/0
+
+!== Autre configuration ==
+
+ip name-server 10.10.99.2
+ip name-server 10.10.99.3
+
+
+!== Installer un DHCP Interne
+
+ip dhcp excluded-address 192.168.200.254
+ip dhcp excluded-address 192.168.200.1
+
+!
+ip dhcp pool CLIENT 
+
+!--- Configures a DHCP address pool.
+
+import all
+network 192.168.200.0 255.255.255.0
+default-router 192.168.200.254 
+dns-server 10.10.99.2
+
+no ip dhcp-client network-discovery
+
+
+!=== Configuration Interface Interne
+
+interface FastEthernet 0/1
+ip address 192.168.200.254 255.255.255.0
+ip nat inside 
+
+!==== IP NAT configuration.
+
+no ip route-cache
+no cdp enable
+
+!=== Configuration Interface Externe
+
+!=--- Opbtenir une adresse dynamique
+
+int FastEthernet 0/0
 ip address dhcp
 no shut
 
-interface GigabitEthernet0/1
-ip address 192.168.100.254 255.255.255.0
-no shut
+ip nat outside 
 
-ip route 0.0.0.0 0.0.0.0 dhcp
+!=--- IP NAT configuration.
+
+no ip route-cache
+no cdp enable
+
+ip nat inside source list 102 interface FastEthernet 0/1 overload 
+
+!--- IP NAT configuration.
+
+ip route 0.0.0.0 0.0.0.0 FastEthernet 0/0 
+
+!--- IP address 66.108.112.1 is the next hop IP address, also called 
+!--- the default gateway. Your Internet service provider (ISP) can tell you what IP address to 
+!--- configure as the next hop address.
+
+!
+access-list 102 permit ip 192.168.200.0 0.0.0.255 any
 
 
