@@ -1,0 +1,17 @@
+
+
+== Routeur ==
+
+en
+config t
+int GigabitEthernet 0/0
+ip address dhcp
+no shut
+
+interface GigabitEthernet0/1
+ip address 192.168.100.254 255.255.255.0
+no shut
+
+ip route 0.0.0.0 0.0.0.0 dhcp
+
+
