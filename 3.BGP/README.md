@@ -1,6 +1,7 @@
 
 
-https://github.com/CollegeBoreal/INF1075-16H/blob/master/3.BGP/BGP.png
+
+![alt tag](https://github.com/CollegeBoreal/INF1075-16H/blob/master/3.BGP/BGP.png)
 
 
 ### Looking Glasses
