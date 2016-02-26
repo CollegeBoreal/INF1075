@@ -1,2 +1,5 @@
-a quoi peux bien servir un :
-bgp router-id ???
+1) A quoi peux bien servir un bgp router-id ?
+
+Des identifiants sont utilises entre routeur pour une session, ces identifiants peuvent etre assignes ou sont calcules.
+
+
