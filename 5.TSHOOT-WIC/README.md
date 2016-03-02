@@ -1,6 +1,7 @@
 # Laboratoire Pratique
 
-- Configurer 2 routeurs CISCO connectés en série avec des cables V.35.
+- Configurer 2 routeurs CISCO (1ère et 2ème générations) connectés en série avec des cables V.35.
+- Déterminer les interfaces requieses
 - utiliser l'encapsulation HDLC par défault et PPP
 
 ### Card Interfaces
