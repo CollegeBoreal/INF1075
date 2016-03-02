@@ -1,3 +1,8 @@
+# Laboratoire Pratique
+
+- Configurer 2 routeurs CISCO connectés en série avec des cables V.35.
+- utiliser l'encapsulation HDLC par défault et PPP
+
 ### Card Interfaces
 http://www.cisco.com/c/en/us/support/docs/interfaces-modules/interface-cards/71820-routermodules.html
 
