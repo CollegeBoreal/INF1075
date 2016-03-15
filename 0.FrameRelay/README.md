@@ -1,8 +1,5 @@
 # INF1075
 
-## Back to Back FR
-http://www.cisco.com/c/en/us/support/docs/wan/frame-relay/14193-frbacktoback.html
-
 ## Configuration:
 
 - Tous IPs, Masques Sous-Réseaux et Passerelles
