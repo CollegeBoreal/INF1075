@@ -1,0 +1,48 @@
+
+============= R1 ================
+en
+config t
+hostname R1
+exit
+
+config t
+int serial 0/3/0 
+encapsulation frame-relay
+no shut
+
+no keepalive 
+!--- This command disables LMI processing.
+
+clock rate 64000
+
+int serial 0/3/0.1 point-to-point
+ip address 10.10.10.1 255.255.255.0
+frame-relay interface-dlci 101
+
+exit
+exit
+wr
+
+============= R2 ================
+en
+config t
+hostname R2
+exit
+
+config t
+int serial 0/3/0 
+encapsulation frame-relay
+no shut
+
+no keepalive 
+!--- This command disables LMI processing.
+
+int serial 0/3/0.1 point-to-point
+ip address 10.10.10.2 255.255.255.0
+frame-relay interface-dlci 101
+
+
+exit
+exit
+wr
+
