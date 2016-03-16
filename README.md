@@ -1,5 +1,7 @@
 # INF1075
 
+## Practice Test
+http://www.cerexam.com/
 
 ### Multilink PPP
 http://evilrouters.net/2008/11/27/configuring-multilink-ppp-dynamips/
