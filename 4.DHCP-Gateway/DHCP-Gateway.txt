@@ -1,12 +1,12 @@
 ! En Mode privilege
 conf t
 
-! Cheer un pool DHCP Interne
-ip dhcp excluded-address 192.168.1.1 192.168.1.30
+! Creer un pool DHCP Interne
+ip dhcp excluded-address 172.16.0.1 172.16.0.30
 !
 ip dhcp pool DHCPinterne
-network 192.168.1.0 255.255.255.0
-default-router 192.168.1.1
+network 172.16.0.0 255.255.0.0
+default-router 172.16.0.1
 dns-server 10.10.99.2 10.10.99.3
 !
 interface FastEthernet0/0
@@ -17,10 +17,10 @@ no shutdown
 !
 interface FastEthernet0/1
 description Vers le LAN
-ip address 192.168.1.1 255.255.255.0
+ip address 172.16.0.1 255.255.0.0
 ip nat inside
 no shutdown
 !
 ip nat inside source list 1 interface FastEthernet0/0 overload
 !
-access-list 1 permit 192.168.1.0 0.0.0.255
+access-list 1 permit 172.16.0.0 0.0.255.255
