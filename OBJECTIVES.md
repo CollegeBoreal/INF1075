@@ -15,7 +15,9 @@ devices to other network devices and hosts in a LAN
 ## 2.0 LAN Switching Technologies 20%
 ```
 2.1 Determine the technology and media access control method for Ethernet networks
-2.2 Identify basic switching concepts and the operation of Cisco switches
+```
+### 2.2 Identify basic switching concepts and the operation of Cisco switches
+```
 2.2.a Collision Domains
 2.2.b Broadcast Domains
 2.2.c Ways to switch
@@ -23,7 +25,9 @@ devices to other network devices and hosts in a LAN
 2.2.c (ii) Forward
 2.2.c (iii) Cut through
 2.2.d CAM Table
-2.3 Configure and verify initial switch configuration including remote access management
+```
+### 2.3 Configure and verify initial switch configuration including remote access management
+```
 2.3.a hostname
 2.3.b mgmt ip address
 2.3.c ip default-gateway
@@ -33,12 +37,16 @@ devices to other network devices and hosts in a LAN
 2.3.g exec-timeout
 2.3.h service password encryption
 2.3.i copy run start
-2.4 Verify network status and switch operation using basic utilities such as
+```
+### 2.4 Verify network status and switch operation using basic utilities such as
+```
 2.4.a ping
 2.4.b telnet
 2.4.c SSH
-2.5 Describe how VLANs create logically separate networks and the need for routing
+```
+### 2.5 Describe how VLANs create logically separate networks and the need for routing
 between them
+```
 2.5.a Explain network segmentation and basic traffic management concepts
 2.6 Configure and verify VLANs
 2.7 Configure and verify trunking on Cisco switches
