@@ -1,4 +1,7 @@
-1.0 Operation of IP Data Networks 5%
+https://learningnetwork.cisco.com/community/certifications/ccna/ccna_exam_v2/exam-topics
+
+## 1.0 Operation of IP Data Networks 5%
+```
 1.1 Recognize the purpose and functions of various network devices such as routers,
 switches, bridges and hubs
 1.2 Select the components required to meet a given network specification
@@ -7,8 +10,10 @@ switches, bridges and hubs
 1.5 Predict the data flow between two hosts across a network
 1.6 Identify the appropriate media, cables, ports, and connectors to connect Cisco network
 devices to other network devices and hosts in a LAN
+```
 
-2.0 LAN Switching Technologies 20%
+## 2.0 LAN Switching Technologies 20%
+```
 2.1 Determine the technology and media access control method for Ethernet networks
 2.2 Identify basic switching concepts and the operation of Cisco switches
 2.2.a Collision Domains
@@ -46,8 +51,10 @@ between them
 2.9 Configure and verify PVSTP operation
 2.9.a Describe root bridge election
 2.9.b Spanning tree mode
+```
 
-3.0 IP Addressing (IPv4/IPv6)  5%
+## 3.0 IP Addressing (IPv4/IPv6)  5%
+```
 3.1 Describe the operation and necessity of using private and public IP addresses for IPv4
 addressing
 3.2 Identify the appropriate IPv6 addressing scheme to satisfy addressing requirements in a
@@ -130,6 +137,11 @@ routing requirements
 4.11.g Load Balancing
 4.11.g (i) Unequal
 4.11.g (ii) Equal
+```
+
+## 5
+
+```
 5.2.c named
 5.2.d numbered
 5.2.e Log option
@@ -154,8 +166,10 @@ routing requirements
 5.8 Configure and verify syslog
 5.8.a Utilize syslog output
 5.9 Describe SNMP v2 and v3.
+```
 
-6.0 Network Device Security 10%
+## 6.0 Network Device Security 10%
+```
 6.1 Configure and verify network device security features
 6.1.a Device password security
 6.1.b Enable secret vs. enable
@@ -180,8 +194,10 @@ routing requirements
 6.2.h Putting Native VLAN to other than VLAN 1
 6.3 Configure and verify ACLs to filter network traffic
 6.4 Configure and verify ACLs to limit telnet and SSH access to the router
+```
 
-7.0 Troubleshooting  20%
+## 7.0 Troubleshooting  20%
+```
 7.1 Troubleshoot and correct common problems associated with IP addressing and host
 configurations
 7.2 Troubleshoot and resolve VLAN problems
@@ -240,8 +256,10 @@ configurations
 7.12.c PPP
 7.13 Monitor NetFlow statistics
 7.14 TS EtherChannel problems
+```
 
-8.0 WAN Technologies 10%
+## 8.0 WAN Technologies 10%
+```
 8.1 Identify different WAN Technologies
 8.1.a Metro ethernet
 8.1.b VSAT
@@ -257,3 +275,4 @@ configurations
 8.3 Configure and verify a PPP connection between Cisco routers
 8.4 Configure and verify frame relay on Cisco routers
 8.5 Implement and troubleshoot PPPoE
+```
