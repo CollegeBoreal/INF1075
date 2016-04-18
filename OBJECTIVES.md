@@ -139,9 +139,22 @@ routing requirements
 4.11.g (ii) Equal
 ```
 
-## 5
-
+## 5.0 IP Services 10%
 ```
+5.1 Configure and verify DHCP (IOS Router)
+5.1.a Configuring router interfaces to use DHCP
+5.1.b DHCP options (basic overview and functionality)
+5.1.c Excluded addresses
+5.1.d Lease time
+ 
+5.2 Describe the types, features, and applications of ACLs
+5.2.a standard (editing and sequence numbers)
+5.2.b extended
+5.2.c named
+5.2.d numbered
+5.2.e Log option
+ 
+5.3 Configure and verify ACLs in a network environment
 5.2.c named
 5.2.d numbered
 5.2.e Log option
