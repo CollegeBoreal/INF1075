@@ -78,7 +78,10 @@ satisfy addressing requirements in a LAN/WAN environment
 3.5.d unique local
 3.5.e eui 64
 3.5.f auto-configuration
-4.0 IP Routing Technologies
+```
+
+## 4.0 IP Routing Technologies
+```
 4.1 Describe basic routing concepts
 4.1.a packet forwarding
 4.1.b router lookup process
