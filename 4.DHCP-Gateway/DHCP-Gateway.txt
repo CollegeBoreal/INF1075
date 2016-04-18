@@ -1,71 +1,26 @@
+! En Mode privilege
+conf t
 
-
-!== Routeur ==
-
-en
-config t
-
-!== Autre configuration ==
-
-ip name-server 10.10.99.2
-ip name-server 10.10.99.3
-
-
-!== Installer un DHCP Interne
-
-ip dhcp excluded-address 192.168.200.254
-ip dhcp excluded-address 192.168.200.1
-
+! Creer un pool DHCP Interne
+ip dhcp excluded-address 172.16.0.1 172.16.0.30
 !
-ip dhcp pool CLIENT 
-
-!--- Configures a DHCP address pool.
-
-import all
-network 192.168.200.0 255.255.255.0
-default-router 192.168.200.254 
-dns-server 10.10.99.2
-
-no ip dhcp-client network-discovery
-
-
-!=== Configuration Interface Interne
-
-interface FastEthernet 0/1
-ip address 192.168.200.254 255.255.255.0
-ip nat inside 
-
-!==== IP NAT configuration.
-
-no ip route-cache
-no cdp enable
-
-!=== Configuration Interface Externe
-
-!=--- Opbtenir une adresse dynamique
-
-int FastEthernet 0/0
+ip dhcp pool DHCPinterne
+network 172.16.0.0 255.255.0.0
+default-router 172.16.0.1
+dns-server 10.10.99.2 10.10.99.3
+!
+interface FastEthernet0/0
+description Vers le FAI (le WAN)
 ip address dhcp
-no shut
-
-ip nat outside 
-
-!=--- IP NAT configuration.
-
-no ip route-cache
-no cdp enable
-
-ip nat inside source list 102 interface FastEthernet 0/1 overload 
-
-!--- IP NAT configuration.
-
-ip route 0.0.0.0 0.0.0.0 FastEthernet 0/0 
-
-!--- IP address 66.108.112.1 is the next hop IP address, also called 
-!--- the default gateway. Your Internet service provider (ISP) can tell you what IP address to 
-!--- configure as the next hop address.
-
+ip nat outside
+no shutdown
 !
-access-list 102 permit ip 192.168.200.0 0.0.0.255 any
-
-
+interface FastEthernet0/1
+description Vers le LAN
+ip address 172.16.0.1 255.255.0.0
+ip nat inside
+no shutdown
+!
+ip nat inside source list 1 interface FastEthernet0/0 overload
+!
+access-list 1 permit 172.16.0.0 0.0.255.255
