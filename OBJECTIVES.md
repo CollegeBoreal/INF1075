@@ -80,7 +80,7 @@ satisfy addressing requirements in a LAN/WAN environment
 3.5.f auto-configuration
 ```
 
-## 4.0 IP Routing Technologies
+## 4.0 IP Routing Technologies 20%
 ```
 4.1 Describe basic routing concepts
 4.1.a packet forwarding
