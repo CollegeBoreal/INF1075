@@ -1,0 +1,16 @@
+! En Mode privilege
+conf t
+
+! Creer un pool DHCP Interne
+ip dhcp excluded-address 10.13.237.1 10.13.237.9
+!
+ip dhcp pool DHCPinterne
+network 10.13.237.0 255.255.255.128
+default-router 10.13.237.1
+dns-server 10.10.99.2 10.10.99.3
+!
+interface GigabitEthernet0/0
+description Vers le LAN
+ip address 10.13.237.1 255.255.255.128
+no shutdown
+!
